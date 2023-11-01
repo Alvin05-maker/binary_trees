@@ -6,6 +6,7 @@
  * @value: the value of dat to be inserted
  *
  * Return: return the pointer to the newNode
+ * 		Otherwiwise NULL
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
@@ -14,7 +15,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	newNode = malloc(sizeof(binary_tree_t));
 	if (newNode ==  NULL) /* allocation error */
 	{
-		return NULL;
+		return (NULL);
 	}
 	newNode->n = value;
 	newNode->parent = parent;
