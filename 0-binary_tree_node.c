@@ -6,7 +6,7 @@
  * @value: the value of dat to be inserted
  *
  * Return: return the pointer to the newNode
- * 		Otherwiwise NULL
+ * 	Otherwise NULL
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
@@ -22,5 +22,5 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	newNode->left = NULL;
 	newNode->right = NULL;
 
-	return newNode;
+	return (newNode);
 }
